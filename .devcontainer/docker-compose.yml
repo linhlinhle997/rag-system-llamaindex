@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: ./Dockerfile
+    container_name: app-cont
+    working_dir: /src
+    env_file:
+      - ../backend/.env
+      - ../frontend/.env
+    networks:
+      - appnet
+    volumes:
+      - ..:/src:cached
+      - venv:/src/.venv
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    restart: unless-stopped
+    command: ["/bin/bash", "-c", "if [ ! -d '/src/.venv' ]; then python3 -m venv /src/.venv; fi && source /src/.venv/bin/activate && sleep infinity"]
+
+networks:
+  appnet:
+
+volumes:
+  database:
+  venv:

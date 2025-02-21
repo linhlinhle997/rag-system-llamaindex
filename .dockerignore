@@ -1,0 +1,42 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environment folder
+venv/
+env/
+.venv/
+
+# Ignore Jupyter Notebooks and other IDE files
+.ipynb_checkpoints
+.idea/
+.vscode/
+
+# Ignore test files and directories
+tests/
+*.test.py
+*.spec.py
+
+# Ignore configuration files and secrets
+*.env
+*.yaml
+*.yml
+
+# Ignore Dockerfile itself (optional)
+Dockerfile
+
+# Ignore Node.js and frontend build files (if applicable)
+node_modules/
+build/
+dist/
+*.log
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# Ignore the .git directory
+.git/
