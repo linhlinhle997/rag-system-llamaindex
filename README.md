@@ -96,7 +96,7 @@ The frontend provides an easy-to-use interface to interact with the RAG system. 
 
 A video demonstration of the RAG System is included to show how the system works, including uploading files, querying the RAG system, and receiving ranked answers.
 
-
+https://github.com/user-attachments/assets/4777dbc0-819e-4ace-9942-f398c8d84d99
 
 ---
 
